@@ -9,7 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        TabView {
+            Tab(title: "Today") {
+                ScrollView {
+                    LazyVStack {
+                        Card().padding(2).clipped().shadow(radius: 3)
+                        Card().padding(2).clipped().shadow(radius: 3)
+                        Card().padding(2).clipped().shadow(radius: 3)
+                    }
+                }
+            }
+
+            Tab(title: "遊戲") {
+                Game()
+            }
+        }
     }
 }
 
