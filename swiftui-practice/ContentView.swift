@@ -10,15 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Tab(title: "Today") {
-                ScrollView {
-                    LazyVStack {
-                        Card().padding(2).clipped().shadow(radius: 3)
-                        Card().padding(2).clipped().shadow(radius: 3)
-                        Card().padding(2).clipped().shadow(radius: 3)
-                    }
-                }
-            }
+            TodayView()
 
             Tab(title: "遊戲") {
                 Game()
@@ -32,3 +24,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
