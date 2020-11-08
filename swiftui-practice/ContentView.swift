@@ -9,12 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            TodayView()
-
-            Tab(title: "遊戲") {
-                Game()
-            }
+        Group {
+            StoreView()
         }
     }
 }
