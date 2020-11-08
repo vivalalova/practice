@@ -15,7 +15,6 @@ struct Card1: View {
                     .resizable()
                     .scaledToFill()
                     .clipped()
-                    .frame(width: 300, height: 360)
 
                 VStack(alignment: .leading) {
                     Text("APP STORE 呈獻")
@@ -38,7 +37,8 @@ struct Card1: View {
                 .frame(maxWidth: .infinity)
                 .padding()
             }
-            .frame(width: 300, height: 360)
+            .aspectRatio(contentMode: .fit)
+
             .cornerRadius(16)
     }
 }

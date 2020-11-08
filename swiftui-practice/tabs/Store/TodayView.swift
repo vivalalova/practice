@@ -30,6 +30,7 @@ struct TodayView: View {
                 }.padding(.horizontal)
 
                 Card1()
+                    .padding()
 //                    .padding(2).clipped().shadow(radius: 3)
 //                Card1()
 //                    .padding(2).clipped().shadow(radius: 3)
