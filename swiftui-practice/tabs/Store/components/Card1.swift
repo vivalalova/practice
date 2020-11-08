@@ -12,9 +12,12 @@ struct Card1: View {
         return
             ZStack {
                 Image("carrot-chops")
-                    .renderingMode(.original)
+                    .resizable()
+                    .scaledToFill()
+                    .clipped()
+                    .frame(width: 300, height: 360)
 
-                VStack {
+                VStack(alignment: .leading) {
                     Text("APP STORE 呈獻")
                         .foregroundColor(.gray)
                         .fontWeight(.bold)
@@ -25,17 +28,17 @@ struct Card1: View {
                         .fontWeight(.bold)
 
                     Spacer()
+                        .frame(maxWidth: .infinity)
 
                     Text("原著作者帶你進入鬥智世界")
                         .foregroundColor(.white)
                         .font(.body)
                         .fontWeight(.bold)
                 }
+                .frame(maxWidth: .infinity)
                 .padding()
             }
-
             .frame(width: 300, height: 360)
-            .clipped()
             .cornerRadius(16)
     }
 }
