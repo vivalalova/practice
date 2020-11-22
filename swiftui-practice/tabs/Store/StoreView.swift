@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct StoreView: View {
+    @StateObject var detailObject = DetailViewModel()
+
+
     var body: some View {
         TabView {
             TodayView()
 
             Tab(title: "遊戲") {
                 Game()
+                    .environmentObject(detailObject)
             }
         }
     }

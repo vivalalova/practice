@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Card2: View {
+//    let item:TodayItem
+
     let height: CGFloat = 200
     let height1: CGFloat = 100
 

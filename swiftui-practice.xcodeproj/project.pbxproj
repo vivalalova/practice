@@ -16,6 +16,7 @@
 		9E01EC8E2556C63C00C6D753 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01EC8D2556C63C00C6D753 /* TodayView.swift */; };
 		9E01EC932556F7C100C6D753 /* Card1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01EC922556F7C100C6D753 /* Card1.swift */; };
 		9E29B4EC255836BD00B6B319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E01EC732556B76200C6D753 /* Assets.xcassets */; };
+		9E457432256523080081048B /* TodayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E457431256523080081048B /* TodayDetailView.swift */; };
 		9E76273A25583403003A048F /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E76273925583403003A048F /* StoreView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		9E01EC892556C18000C6D753 /* Card2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card2.swift; sourceTree = "<group>"; };
 		9E01EC8D2556C63C00C6D753 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		9E01EC922556F7C100C6D753 /* Card1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1.swift; sourceTree = "<group>"; };
+		9E457431256523080081048B /* TodayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDetailView.swift; sourceTree = "<group>"; };
 		9E76273925583403003A048F /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,9 +104,10 @@
 		9E762738255833EF003A048F /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				9E76273925583403003A048F /* StoreView.swift */,
 				9E01EC812556BF2400C6D753 /* Tab.swift */,
+				9E76273925583403003A048F /* StoreView.swift */,
 				9E01EC8D2556C63C00C6D753 /* TodayView.swift */,
+				9E457431256523080081048B /* TodayDetailView.swift */,
 				9E01EC852556BF5600C6D753 /* Game.swift */,
 				9E01EC882556C17600C6D753 /* components */,
 			);
@@ -184,6 +187,7 @@
 				9E01EC722556B76000C6D753 /* ContentView.swift in Sources */,
 				9E76273A25583403003A048F /* StoreView.swift in Sources */,
 				9E01EC8A2556C18000C6D753 /* Card2.swift in Sources */,
+				9E457432256523080081048B /* TodayDetailView.swift in Sources */,
 				9E01EC702556B76000C6D753 /* swiftui_practiceApp.swift in Sources */,
 				9E01EC8E2556C63C00C6D753 /* TodayView.swift in Sources */,
 				9E01EC862556BF5600C6D753 /* Game.swift in Sources */,
