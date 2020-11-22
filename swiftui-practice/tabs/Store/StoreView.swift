@@ -13,8 +13,11 @@ struct StoreView: View {
 
     var body: some View {
         TabView {
-            TodayView(animation: animation)
-                .environmentObject(detailObject)
+            Tab(title: "Today", nav: false) {
+                TodayView(animation: animation)
+                    .environmentObject(detailObject)
+//                    .tabItem { Text("Today") }
+            }
 
             Tab(title: "遊戲") {
                 Game()

@@ -9,26 +9,35 @@ import SwiftUI
 
 struct Tab<Content: View>: View {
     let title: String
+    let nav: Bool
     let children: Content
 
     var body: some View {
-        NavigationView {
-            VStack {
-                Divider()
+        if self.nav {
+            NavigationView {
+                VStack {
+                    Divider()
 
-                children
-                    .navigationBarTitle(title, displayMode: .large)
+                    children
 
-                Spacer()
+                    Spacer()
+                }
+                .navigationBarTitle(title, displayMode: .large)
             }
-        }
-        .tabItem {
-            Text(title)
+            .tabItem {
+                Text(title)
+            }
+        } else {
+            children
+                .tabItem {
+                    Text(title)
+                }
         }
     }
 
-    init(title: String, @ViewBuilder content: () -> Content) {
+    init(title: String, nav: Bool = true, @ViewBuilder content: () -> Content) {
         self.title = title
+        self.nav = nav
         self.children = content()
     }
 }
@@ -36,7 +45,7 @@ struct Tab<Content: View>: View {
 struct Tab_Previews: PreviewProvider {
     static var previews: some View {
         TabView {
-            Tab(title: "gg") {
+            Tab(title: "gg", nav: false) {
                 Text("hihi")
             }
 

@@ -47,7 +47,7 @@ struct TodayView: View {
 //                Card1()
 //                    .padding(2).clipped().shadow(radius: 3)
             }
-        }.tabItem { Text("Today") }
+        }
     }
 
     var head: some View {
