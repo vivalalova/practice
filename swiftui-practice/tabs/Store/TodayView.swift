@@ -24,8 +24,7 @@ let mockItem = TodayItem(
 )
 
 struct TodayView: View {
-    @Namespace var animation
-//    var animation: Namespace.ID
+    var animation: Namespace.ID
 
     @EnvironmentObject var detail: DetailViewModel
 
@@ -75,7 +74,9 @@ struct TodayView: View {
 }
 
 struct TodayView_Previews: PreviewProvider {
+    @Namespace static var animation
+
     static var previews: some View {
-        TodayView()
+        TodayView(animation: animation)
     }
 }

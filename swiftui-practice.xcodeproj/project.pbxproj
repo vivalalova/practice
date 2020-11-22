@@ -95,6 +95,7 @@
 		9E01EC882556C17600C6D753 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				9E01EC812556BF2400C6D753 /* Tab.swift */,
 				9E01EC922556F7C100C6D753 /* Card1.swift */,
 				9E01EC892556C18000C6D753 /* Card2.swift */,
 			);
@@ -104,7 +105,6 @@
 		9E762738255833EF003A048F /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				9E01EC812556BF2400C6D753 /* Tab.swift */,
 				9E76273925583403003A048F /* StoreView.swift */,
 				9E01EC8D2556C63C00C6D753 /* TodayView.swift */,
 				9E457431256523080081048B /* TodayDetailView.swift */,
